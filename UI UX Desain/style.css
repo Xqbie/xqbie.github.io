@@ -1,0 +1,10 @@
+body {
+  background: linear-gradient(180deg, #680072 0%, rgba(255, 0, 230, 0) 100%);
+  background-repeat: no-repeat;
+  height: 1280px;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 9rem;
+}
