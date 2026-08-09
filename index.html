@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio BieTech - Web Developer & IT Solution"
+    />
+    <title>BieTech | Tech Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="cursor-glow"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-inner">
+        <a href="#home" class="logo">
+          <span class="logo-icon">&lt;/&gt;</span>
+          <span>BIETECH</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="#" class="nav-cv" id="downloadCv">
+            <span>Download CV</span>
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero section" id="home">
+        <div class="hero-grid"></div>
+        <div class="circuit circuit-1"></div>
+        <div class="circuit circuit-2"></div>
+
+        <div class="container hero-content">
+          <div class="hero-text reveal">
+            <div class="eyebrow"><span></span> HELLO, I'M</div>
+            <h1>Febriansyah</h1>
+            <h2>
+              Tech
+              <span> Enthusiast</span>
+            </h2>
+            <p>
+              Saya membangun solusi digital yang cepat, modern, responsif, dan
+              berfokus pada pengalaman pengguna.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                Lihat Proyek Saya <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                Hubungi Saya <i class="fa-regular fa-message"></i>
+              </a>
+            </div>
+
+            <div class="socials">
+              <span>Temukan saya di</span>
+              <div>
+                <a href="https://github.com/Xqbie" aria-label="GitHub"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="#" aria-label="LinkedIn"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/fbr.i_"
+                  aria-label="Instagram"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  href="https://mail.google.com/mail/u/1/#inbox?compose=CllgCJTJFkxjqfwKGnZWsDvDGjGggVdmJNPdtfMFdlZxjSXjpTnWCFDrnmQxWmDGcGJGLBtldQB"
+                  aria-label="Email"
+                  ><i class="fa-regular fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="orb"></div>
+            <div class="profile-ring"></div>
+
+            <div class="profile-image">
+              <img
+                src="assets/Group 1.png"
+                alt="Febriansyah - Full Stack Developer"
+              />
+            </div>
+
+            <div class="floating-card code-card">
+              <span class="dot"></span>
+              <code>
+                function solve() {<br />
+                &nbsp;&nbsp;return success;<br />
+                }
+              </code>
+            </div>
+
+            <div class="floating-card status-card">
+              <span class="status-dot"></span>
+              <small>AVAILABLE FOR</small>
+              <strong>Freelance</strong>
+            </div>
+
+            <div class="floating-card tech-card">
+              <span class="blue-dot"></span>
+              <span>Tech Enthusiast</span>
+
+              <span class="blue-dot"></span>
+              <span>Problem Solver</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#about" class="scroll-down">
+          <span>Scroll</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section about" id="about">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-text reveal">
+              <div class="section-label">TENTANG SAYA</div>
+              <h2>Berfokus membangun <span>solusi digital.</span></h2>
+              <p>
+                Saya adalah seorang Tech Enthusiast dengan fokus pada Network
+                Administration dan Junior Web Development. Saya senang
+                membangun, mengelola, dan mengeksplorasi berbagai teknologi
+                untuk menciptakan solusi digital yang efektif. Di luar bidang
+                IT.
+              </p>
+              <p>
+                saya juga memiliki kemampuan di bidang 3D Design, Music
+                Production, Video Editing, Graphic Design, dan UI/UX Design.
+              </p>
+              <a href="#contact" class="text-link"
+                >Mari bekerja sama <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+
+            <div class="stats-grid">
+              <div class="stat-card reveal">
+                <i class="fa-solid fa-code"></i>
+                <strong class="counter" data-target="3">0</strong><b>+</b>
+                <span>Tahun Pengalaman</span>
+              </div>
+              <div class="stat-card reveal">
+                <i class="fa-solid fa-layer-group"></i>
+                <strong class="counter" data-target="30">0</strong><b>+</b>
+                <span>Project Selesai</span>
+              </div>
+              <div class="stat-card reveal">
+                <i class="fa-solid fa-users"></i>
+                <strong class="counter" data-target="20">0</strong><b>+</b>
+                <span>Klien</span>
+              </div>
+              <div class="stat-card reveal">
+                <i class="fa-solid fa-shield-halved"></i>
+                <strong>100</strong><b>%</b>
+                <span>Commitment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section skills" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-label">KEAHLIAN</div>
+            <h2>Tools & <span>Technology</span></h2>
+            <p>Teknologi yang saya gunakan untuk membangun solusi digital.</p>
+          </div>
+
+          <div class="skills-layout">
+            <div class="skill-group reveal">
+              <h3><i class="fa-solid fa-code"></i> Web Development</h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <i class="fa-brands fa-html5"></i><span>HTML5</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-brands fa-css3-alt"></i><span>CSS3</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-brands fa-js"></i><span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-brands fa-php"></i><span>PHP</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-brands fa-node-js"></i><span>Node.js</span>
+                </div>
+                <!-- <div class="skill-item">
+                  <i class="fa-brands fa-react"></i><span>React</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-solid fa-wind"></i><span>Tailwind</span>
+                </div> -->
+                <div class="skill-item">
+                  <i class="fa-solid fa-mobile-screen"></i
+                  ><span>Responsive</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-group reveal">
+              <h3>
+                <i class="fa-solid fa-network-wired"></i> Network Administrator
+              </h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <i class="fa-solid fa-network-wired"></i
+                  ><span>MikroTik WinBox</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-solid fa-network-wired"></i
+                  ><span>MikroTik WebFig</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-solid fa-network-wired"></i
+                  ><span>Cisco IOS / CLI</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-solid fa-network-wired"></i
+                  ><span>UniFi Controller</span>
+                </div>
+                <!-- <div class="skill-item">
+                  <i class="fa-brands fa-laravel"></i><span>Laravel</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-solid fa-database"></i><span>MySQL</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-brands fa-python"></i><span>Python</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-solid fa-fire"></i><span>Firebase</span>
+                </div> -->
+              </div>
+            </div>
+
+            <div class="skill-group reveal">
+              <h3>
+                <i class="fa-solid fa-screwdriver-wrench"></i>Support Tools
+              </h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <i class="fa-solid fa-network-wired"></i><span>Linux</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-brands fa-figma"></i><span>Figma</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-brands fa-git-alt"></i><span>Git</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-brands fa-github"></i><span>GitHub</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-solid fa-code"></i><span>VS Code</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-brands fa-chevron-down"></i
+                  ><span>Microsoft Office</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-group reveal">
+              <h3>
+                <i class="fa-solid fa-screwdriver-wrench"></i> Cretive Tools
+              </h3>
+              <div class="skill-item">
+                <i class="fa-brands"></i><span>3D Blender</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands"></i><span>Premier Pro</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands"></i><span>FL Studio</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands"></i><span>Photoshop</span>
+              </div>
+            </div>
+
+            <div class="skill-group reveal">
+              <h3><i class="fa-solid fa-screwdriver-wrench"></i> Ai Tools</h3>
+              <div class="skill-item">
+                <i class="fa-brands"></i><span>Claude</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands"></i><span>Chatgpt</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands"></i><span>Gemini</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section projects" id="projects">
+        <div class="container">
+          <div class="section-heading projects-heading reveal">
+            <div>
+              <div class="section-label">PROYEK PILIHAN</div>
+              <h2>Beberapa <span>project</span> terbaru</h2>
+            </div>
+            <a href="#" class="btn btn-small"
+              >Lihat Semua <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-image dashboard-image">
+                <div class="mini-window">
+                  <div class="mini-top">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="mini-body">
+                    <div class="mini-sidebar"></div>
+                    <div class="mini-content">
+                      <div class="mini-bars"><i></i><i></i><i></i></div>
+                      <div class="mini-chart"></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="project-type">WEBSITE</span>
+              </div>
+              <div class="project-body">
+                <h3>Company Profile</h3>
+                <p>
+                  Web Profile Company Perusahaan jasa Bongkar Muat dan Layanan
+                  Pergudangan
+                </p>
+                <div class="tags">
+                  <span>PHP</span><span>HTML</span><span>CSS</span
+                  ><span>JavaScript</span>
+                </div>
+                <a href="https://dumaibonegroup.com/" class="project-link"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-image learning-image">
+                <div class="learning-content">
+                  <small>Subnetting • IP Addressing • Load Balancing</small>
+                  <strong>Network<br />Manajement.</strong>
+                  <span></span>
+                </div>
+                <span class="project-type">NETWORKING</span>
+              </div>
+              <div class="project-body">
+                <h3>Network Administrator</h3>
+                <p>
+                  Pengelolaan infrastruktur jaringan meliputi konfigurasi
+                  router, switch, firewall, server, monitoring jaringan,
+                  troubleshooting, dan penerapan keamanan jaringan.
+                </p>
+                <div class="tags">
+                  <span>Laravel</span><span>MySQL</span><span>Bootstrap</span>
+                </div>
+                <a href="#" class="project-link"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-image finance-image">
+                <div class="phone phone-1"><div></div></div>
+                <div class="phone phone-2"><div></div></div>
+                <div class="phone phone-3"><div></div></div>
+                <span class="project-type">MOBILE APP</span>
+              </div>
+              <div class="project-body">
+                <h3>Aplikasi Keuangan</h3>
+                <p>
+                  Aplikasi mobile untuk manajemen keuangan pribadi dan
+                  pencatatan transaksi.
+                </p>
+                <div class="tags">
+                  <span>Flutter</span><span>Firebase</span><span>Dart</span>
+                </div>
+                <a href="#" class="project-link"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="section experience" id="experience">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-label">PENGALAMAN</div>
+            <h2>Perjalanan <span>karier</span></h2>
+          </div>
+
+          <div class="experience-grid">
+            <div class="timeline reveal">
+              <div class="timeline-item">
+                <div class="timeline-date">2024 — Sekarang</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>Junior Web Developer</h3>
+                  <h4>BieTech Solution</h4>
+                  <p>
+                    mengembangkan kemampuan sebagai Junior Web Developer dengan
+                    fokus pada pembuatan website yang modern, responsive,
+                    user-friendly, dan memiliki performa yang baik.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">2023 — 2024</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>Web Developer</h3>
+                  <h4>Digital Project</h4>
+                  <p>
+                    Mengembangkan company profile, landing page, dan sistem
+                    berbasis web untuk kebutuhan bisnis.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">2022 — 2023</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>Network Administrator</h3>
+                  <h4>Network Project</h4>
+                  <p>
+                    mengembangkan kemampuan di bidang Network Administration dan
+                    IT Infrastructure, dengan tujuan untuk mampu membangun dan
+                    mengelola infrastruktur jaringan yang stabil, aman,
+                    scalable, dan reliable.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="terminal reveal">
+              <div class="terminal-top">
+                <div><span></span><span></span><span></span></div>
+                <small>bie@portfolio:~</small>
+              </div>
+              <div class="terminal-body">
+                <p>
+                  <span class="terminal-green">bie@portfolio</span>:~$ whoami
+                </p>
+                <p class="terminal-output">
+                  Network Engineer, Junior Web Developer & IT Enthusiast
+                </p>
+                <p>
+                  <span class="terminal-green">bie@portfolio</span>:~$ skills
+                  --list
+                </p>
+                <p class="terminal-output">
+                  Networking<br />System Information<br />Web Development<br />IT
+                  Infrastructure <br />
+                  Creative industry
+                </p>
+                <p>
+                  <span class="terminal-green">bie@portfolio</span>:~$ status
+                </p>
+                <p class="terminal-success">● Available for new projects</p>
+                <p>
+                  <span class="terminal-green">bie@portfolio</span>:~$
+                  <span class="typing-cursor">_</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="contact-box reveal">
+            <div class="contact-info">
+              <div class="section-label">HUBUNGI SAYA</div>
+              <h2>
+                Punya project menarik?<br /><span>Mari bekerja sama!</span>
+              </h2>
+              <p>
+                Terbuka untuk diskusi project, kolaborasi, website, aplikasi,
+                dan kebutuhan IT.
+              </p>
+
+              <div class="contact-list">
+                <a href="mailto:hello@bietechnology.id">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span><small>Email</small>febriansyah9tiga@gmail.com</span>
+                </a>
+                <a href="https://wa.me/6281266811740" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span><small>WhatsApp</small>+62 812-6681-1740</span>
+                </a>
+                <div>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span><small>Lokasi</small>Dumai, Indonesia</span>
+                </div>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <input type="text" id="name" placeholder="Nama Anda" required />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email Anda"
+                  required
+                />
+              </div>
+              <input type="text" id="subject" placeholder="Subjek" required />
+              <textarea
+                id="message"
+                rows="6"
+                placeholder="Ceritakan project Anda..."
+                required
+              ></textarea>
+              <button type="submit" class="btn btn-primary">
+                Kirim Pesan <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-inner">
+        <a href="#home" class="logo">
+          <span class="logo-icon">&lt;/&gt;</span>
+          <span>BIETECH</span>
+        </a>
+        <p>© <span id="year"></span> BieTech. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a href="#home" class="back-top"
+          ><i class="fa-solid fa-arrow-up"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/6281266811740?text=Halo%20BieTech,%20saya%20ingin%20berdiskusi%20tentang%20project."
+      target="_blank"
+      aria-label="Chat WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>Chat WhatsApp</span>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
