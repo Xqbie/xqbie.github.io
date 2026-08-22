@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navbar.classList.toggle("scrolled", window.scrollY > 20);
 
     let current = "";
-    sections.forEach(section => {
+    sections.forEach((section) => {
       const top = section.offsetTop - 130;
       const bottom = top + section.offsetHeight;
       if (window.scrollY >= top && window.scrollY < bottom) {
@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    navLinks.forEach(link => {
+    navLinks.forEach((link) => {
       link.classList.toggle(
         "active",
-        link.getAttribute("href") === `#${current}`
+        link.getAttribute("href") === `#${current}`,
       );
     });
   };
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     menuToggle.classList.toggle("active");
   });
 
-  navLinks.forEach(link => {
+  navLinks.forEach((link) => {
     link.addEventListener("click", () => {
       navMenu.classList.remove("open");
       menuToggle.classList.remove("active");
@@ -58,18 +58,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* Scroll reveal */
   const revealObserver = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
+    (entries) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("active");
           revealObserver.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.12 }
+    { threshold: 0.12 },
   );
 
-  reveals.forEach(el => revealObserver.observe(el));
+  reveals.forEach((el) => revealObserver.observe(el));
 
   /* Counter animation */
   const animateCounter = (element) => {
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const duration = 1400;
     const start = performance.now();
 
-    const update = now => {
+    const update = (now) => {
       const progress = Math.min((now - start) / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3);
       element.textContent = Math.floor(eased * target);
@@ -93,21 +93,26 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const counterObserver = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
+    (entries) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           animateCounter(entry.target);
           counterObserver.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.6 }
+    { threshold: 0.6 },
   );
 
-  counters.forEach(counter => counterObserver.observe(counter));
+  counters.forEach((counter) => counterObserver.observe(counter));
 
-  /* Form -> WhatsApp */
-  form.addEventListener("submit", e => {
+  /* Form -> EmailJS */
+
+  emailjs.init({
+    publicKey: "eMnX_iVqA6PBGtKhr",
+  });
+
+  form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     const name = document.getElementById("name").value.trim();
@@ -115,27 +120,38 @@ document.addEventListener("DOMContentLoaded", () => {
     const subject = document.getElementById("subject").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    const phone = "6281234567890";
-    const text =
-      `Halo BieTech,%0A%0A` +
-      `Nama: ${encodeURIComponent(name)}%0A` +
-      `Email: ${encodeURIComponent(email)}%0A` +
-      `Subjek: ${encodeURIComponent(subject)}%0A%0A` +
-      `${encodeURIComponent(message)}`;
+    const params = {
+      name: name,
+      email: email,
+      subject: subject,
+      message: message,
+    };
 
-    window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
-    form.reset();
+    emailjs
+      .send("service_apx4exj", "template_1642shl", params)
+      .then(function () {
+        alert("Pesan berhasil dikirim! ✅");
+
+        form.reset();
+      })
+      .catch(function (error) {
+        console.error("EmailJS Error:", error);
+
+        alert("Pesan gagal dikirim ❌");
+      });
   });
 
   /* Download CV - ubah href ke file CV Anda */
-  document.getElementById("downloadCv").addEventListener("click", e => {
+  document.getElementById("downloadCv").addEventListener("click", (e) => {
     e.preventDefault();
-    alert("Tambahkan file CV Anda, lalu ubah link tombol Download CV di index.html.");
+    alert(
+      "Tambahkan file CV Anda, lalu ubah link tombol Download CV di index.html.",
+    );
   });
 
   /* Cursor glow desktop */
   if (window.matchMedia("(pointer:fine)").matches) {
-    window.addEventListener("mousemove", e => {
+    window.addEventListener("mousemove", (e) => {
       cursorGlow.style.left = `${e.clientX}px`;
       cursorGlow.style.top = `${e.clientY}px`;
     });

@@ -25,4 +25,4 @@ Portfolio website responsive dengan tema dark futuristic / tech.
 - Lokasi
 
 ## WhatsApp
-Cari `6281234567890` di `index.html` dan `script.js`, lalu ganti dengan nomor WhatsApp Anda dalam format internasional tanpa tanda +.
+Cari `6281266811740` di `index.html` dan `script.js`, lalu ganti dengan nomor WhatsApp Anda dalam format internasional tanpa tanda +.
