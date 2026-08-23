@@ -13,6 +13,29 @@ document.addEventListener("DOMContentLoaded", () => {
   /* Tahun otomatis */
   year.textContent = new Date().getFullYear();
 
+  /* Theme switch + localStorage */
+  const themeToggle = document.getElementById("themeToggle");
+  const root = document.documentElement;
+
+  const applyTheme = (theme) => {
+    root.dataset.theme = theme;
+    if (themeToggle) {
+      themeToggle.checked = theme === "dark";
+    }
+  };
+
+  const savedTheme = localStorage.getItem("theme");
+  applyTheme(savedTheme === "dark" ? "dark" : "light");
+
+  if (themeToggle) {
+    themeToggle.addEventListener("change", () => {
+      const nextTheme = themeToggle.checked ? "dark" : "light";
+      applyTheme(nextTheme);
+      localStorage.setItem("theme", nextTheme);
+    });
+  }
+
+
   /* Navbar saat scroll */
   const handleScroll = () => {
     navbar.classList.toggle("scrolled", window.scrollY > 20);
@@ -142,12 +165,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* Download CV - ubah href ke file CV Anda */
-  document.getElementById("downloadCv").addEventListener("click", (e) => {
-    e.preventDefault();
-    alert(
-      "Tambahkan file CV Anda, lalu ubah link tombol Download CV di index.html.",
-    );
-  });
+  const downloadCv = document.getElementById("downloadCv");
+
+  if (downloadCv) {
+    downloadCv.addEventListener("click", (e) => {
+      e.preventDefault();
+      alert(
+        "Tambahkan file CV Anda, lalu ubah link tombol Download CV di index.html.",
+      );
+    });
+  }
 
   /* Cursor glow desktop */
   if (window.matchMedia("(pointer:fine)").matches) {

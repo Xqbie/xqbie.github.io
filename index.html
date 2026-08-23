@@ -9,6 +9,14 @@
     />
     <title>BieTech | Tech Portfolio</title>
 
+    <script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme");
+        document.documentElement.dataset.theme =
+          savedTheme === "dark" ? "dark" : "light";
+      })();
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,10 +41,6 @@
           <span>BIETECH</span>
         </a>
 
-        <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
-          <span></span><span></span><span></span>
-        </button>
-
         <nav class="nav-menu" id="navMenu">
           <a href="#home" class="nav-link active">Home</a>
           <a href="#about" class="nav-link">About</a>
@@ -49,6 +53,23 @@
             <i class="fa-solid fa-download"></i>
           </a> -->
         </nav>
+
+        <div class="nav-actions">
+          <label class="theme-switch" title="Ubah tema">
+            <input
+              type="checkbox"
+              id="themeToggle"
+              aria-label="Aktifkan dark mode"
+            />
+            <span class="theme-slider">
+              <span class="theme-circle"></span>
+            </span>
+          </label>
+
+          <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
     </header>
 
