@@ -773,6 +773,7 @@ button {
   font-size: 24px;
   line-height: 1.1;
   margin-top: 10px;
+  color: rgb(255, 255, 255);
 }
 .learning-content span {
   width: 60px;
@@ -1536,7 +1537,7 @@ footer,
 }
 
 .theme-switch input:checked + .theme-slider {
-  background: #55d84a;
+  background: #4f46ff;
 }
 
 .theme-switch input:checked + .theme-slider .theme-circle {
