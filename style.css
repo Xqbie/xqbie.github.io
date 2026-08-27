@@ -414,6 +414,7 @@ button {
   border-radius: 9px;
   box-shadow: var(--shadow);
   z-index: 5;
+  color: white;
 }
 .code-card {
   left: 10px;
@@ -943,12 +944,27 @@ button {
   display: flex;
   gap: 5px;
 }
-.terminal-top span {
+.terminal-top .span-1 {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #35445d;
+  background: #ff0000;
 }
+
+.terminal-top .span-2 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffee00;
+}
+
+.terminal-top .span-3 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #26ff00cb;
+}
+
 .terminal-top small {
   font-size: 9px;
   color: #64748b;
